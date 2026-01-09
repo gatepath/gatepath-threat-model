@@ -1,0 +1,10 @@
+# Example firewall policy (illustrative)
+
+- Default deny on ingress
+- Allow established and related connections
+- Allow WireGuard UDP on the public interface
+- Restrict administrative access to trusted infrastructure
+- Allow Tor SOCKS access only from VPN subnets
+- Block Tor SOCKS access from public interfaces
+- Allow VPN forwarding only for explicitly permitted paths
+- Enforce no clearnet egress for Tor-only VPN paths
