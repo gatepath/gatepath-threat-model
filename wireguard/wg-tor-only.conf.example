@@ -1,0 +1,11 @@
+# Example WireGuard client configuration (Tor-only path, no clearnet fallback)
+
+[Interface]
+Address = 10.8.0.X/32
+PrivateKey = <REDACTED>
+
+[Peer]
+PublicKey = <SERVER_PUBLIC_KEY>
+Endpoint = <SERVER_IP>:51820
+AllowedIPs = 0.0.0.0/0
+PersistentKeepalive = 25
