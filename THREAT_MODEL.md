@@ -116,8 +116,12 @@ Gatepath does not aim to:
 ## 10. Summary
 
 Gatepath provides:
+
 - encrypted transport via WireGuard
 - explicit, opt-in Tor usage via SOCKS
 - Tor-only paths that fail closed without clearnet fallback
 
 Users remain responsible for application-level behavior and their personal threat model.
+
+This infrastructure reduces certain classes of accidental network exposure,
+but does not eliminate the need for informed user behavior.
