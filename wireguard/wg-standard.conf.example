@@ -1,0 +1,13 @@
+# Example WireGuard client configuration (standard clearnet egress)
+
+[Interface]
+Address = 10.7.0.X/32
+PrivateKey = <REDACTED>
+# DNS is intentionally not specified here in this example.
+# If used, keep DNS choices explicit and documented.
+
+[Peer]
+PublicKey = <SERVER_PUBLIC_KEY>
+Endpoint = <SERVER_IP>:51820
+AllowedIPs = 0.0.0.0/0
+PersistentKeepalive = 25
