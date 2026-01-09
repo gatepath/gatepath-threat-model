@@ -1,2 +1,4 @@
-# gatepath-threat-model
-Infrastructure documentation: WireGuard VPN paths, opt-in Tor SOCKS gateway, threat model.
+Infrastructure documentation for Gatepath.
+
+Covers WireGuard-based VPN paths, explicit Tor SOCKS usage,
+Tor-only routing, and the associated threat model.
